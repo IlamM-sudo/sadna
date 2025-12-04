@@ -29,7 +29,7 @@ Point& Point::operator=(const Point& other)
 {
 	delete _coord;
 	_coord = new int[2];
-	memcpy(_coord, other._coord, 2);
+	memcpy(_coord, other._coord, 8); //it only copied 2 bytes but every int is 4 bytes so for y and x which are two ints we need to copy 8 bytes
 	return *this;
 }
 

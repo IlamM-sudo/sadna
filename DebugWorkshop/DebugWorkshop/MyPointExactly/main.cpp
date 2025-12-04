@@ -8,8 +8,8 @@ int main()
 	Point p2;
 	p2 = p1;
 
-	std::cout << "p1=" << std::endl;
-	std::cout << "p2=" << std::endl;
+	std::cout << "p1=" << p1 << std::endl; //didnt print the actual values only the name - "p1="
+	std::cout << "p2=" << p2 << std::endl; //didnt print the actual values only the name - "p2="
 
 	return 0;
 }

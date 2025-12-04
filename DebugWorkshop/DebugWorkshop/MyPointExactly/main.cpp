@@ -10,5 +10,8 @@ int main()
 	std::cout << "p1=" << p1 << std::endl; //didnt print the actual values only the name - "p1="
 	std::cout << "p2=" << p2 << std::endl; //didnt print the actual values only the name - "p2="
 
+	p2 = p2;
+	std::cout << "p2=" << p2 << std::endl;
+
 	return 0;
 }

@@ -14,10 +14,11 @@ Point::Point(int x, int y)
 	_coord[1] = y;
 }
 
-Point::Point(const Point& other)
+Point::Point(const Point& other) //it copied the pointer itself before but now it coppies for real
 {
-	delete _coord;
-	_coord = other._coord;
+	_coord = new int[2];
+	_coord[0] = other._coord[0];
+	_coord[1] = other._coord[1];
 }
 
 Point::~Point()

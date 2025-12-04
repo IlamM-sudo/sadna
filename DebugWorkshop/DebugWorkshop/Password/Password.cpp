@@ -9,6 +9,7 @@ struct Password
 	}
 };
 
+//we need to give an input that ends with 0 so the incorrect becomes false because of the overflow
 int main()
 {
 	std::cout << "Enter your password to continue:" << std::endl;
